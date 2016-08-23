@@ -4,13 +4,16 @@
 A demo of how to use webpack in development.
 
 ## How to start:
-```
+```bash
 $ git clone git@github.com:iamken1204/example.webpack.git
 $ cd example.webpack
+
 # install all node dependencies
 $ npm i
+
 # run dev server at http://localhost:8080/
 $ npm run live
+
 # build compressed js
 $ npm run build
 ```
