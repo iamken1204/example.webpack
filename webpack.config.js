@@ -2,12 +2,13 @@ var path = require('path')
 var webpack = require('webpack')
 // Kettan:
 // webpack bundle css into js by default.
-// For convenience to represent usual scenario we use css,
-// I import htis plugin to sepreate css out from bundled js file.
+// For convenience of representing usual scenario we use css,
+// this example uses ExtractTextPlugin to sepreate css out from bundled js file.
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
   // Kettan:
+  // List all files are waiting to be compiled under config.entry
   // The path should start from the location of webpack.config.js
   entry: {
     onejs: './src/oneJS/vvv.js',
@@ -19,13 +20,13 @@ module.exports = {
     mylib: './src/mylib/index.js'
   },
   // Kettan:
-  // [name] correspond to entry's key
+  // [name] correspond to config.entry's key
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: '[name].build.js',
     // Kettan:
-    // Use for exporting libs,
+    // Export as "umd" format, so your lib can be used on browsers
     // example file: './src/mylib/index.js'
     libraryTarget: "umd"
   },
