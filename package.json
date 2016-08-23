@@ -1,0 +1,26 @@
+{
+  "name": "demo.webpack",
+  "description": "A webpack project",
+  "author": "Kettan",
+  "private": true,
+  "scripts": {
+    "live": "webpack-dev-server --inline --hot",
+    "dev": "webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.13.2",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.3",
+    "file-loader": "^0.8.4",
+    "style-loader": "^0.13.1",
+    "vue": "^2.0.0-rc.3",
+    "vue-loader": "^9.4.0",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+}
