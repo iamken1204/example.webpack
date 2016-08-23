@@ -5,8 +5,8 @@ A demo of how to use webpack in development.
 
 ## How to start:
 ```
-$ git clone
-$ cd webpackdemo
+$ git clone git@github.com:iamken1204/example.webpack.git
+$ cd example.webpack
 # install all node dependencies
 $ npm i
 # run dev server at http://localhost:8080/
@@ -16,7 +16,8 @@ $ npm run build
 ```
 
 ## Scenarios
-> all settings are in: `webpack.config.js`
+> all settings and explanation are in:
+[webpack.config.js](https://github.com/iamken1204/example.webpack/blob/master/webpack.config.js)
 
 * Only one js file
 * Multi js files
